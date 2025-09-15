@@ -72,3 +72,29 @@
   color: #444;
   font-size: 0.95em;
 }
+
+.resume-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.resume-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.resume-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.resume-card a:hover {
+  text-decoration: underline;
+}
