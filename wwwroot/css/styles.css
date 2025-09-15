@@ -74,17 +74,34 @@
 }
 
 .resume-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   background: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  width: 420;
+  max-wideth: 90%;
+  margin: 10px auto 0;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.resume-card:hover{
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+  transform: translateY(-1px);
+}
+
+.resume-card .resume-emoji{ 
+  font-size: 1.4rem; line-height: 1; 
 }
 
 .resume-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
+  margin: 0 0 2px;
+  font-size: 1.05rem;
 }
 
 .resume-card a {
@@ -95,6 +112,12 @@
   font-weight: bold;
 }
 
-.resume-card a:hover {
-  text-decoration: underline;
+.resume-card p{ 
+  margin: 0; color: #555; font-size: .92rem; 
+}
+
+@media (max-width: 720px){
+  .container{ flex-direction: column; }
+  .sidebar, .main-content{ width: 100%; }
+  .resume-card{ margin-top: 14px; }
 }
